@@ -35,6 +35,14 @@ thead {
 tfoot {
 	border-bottom: 1px solid gray;
 }
+
+tbody tr:nth-child(even) {
+	background: aliceblue;
+}
+
+tbody tr:hoober {
+	background: black;
+}
 </style>
 </head>
 <body>
