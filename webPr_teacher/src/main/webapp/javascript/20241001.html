@@ -145,6 +145,7 @@
 		}
 
 		// 정위치에 있는 별을 찍어보기
+		/*
 		for (let star3 = 1; star3 <= 5; star3++) {
 			for (let star4 = 5 - star3; star4 > 0; star4--) {
 				document.write("&nbsp;"); // 띄어쓰기 기호 = " "
@@ -153,6 +154,31 @@
 				document.write("☆");
 			}
 			document.write("<br>");
+		}
+		 */
+
+		// 1에서 10까지의 수 중에 홀수의 합을 구하시오
+		let total5 = 0;
+		for (let num = 1; num < 11; num++) {
+			if (num % 2 == 1) {
+				total5 = num + total5
+			}
+			continue;
+		}
+		document.write(total5);
+		document.write("<br>");
+
+		// 함수만드는 방법
+		function odd() {
+			let total5 = 0;
+			for (let num = 1; num < 11; num++) {
+				if (num % 2 == 1) {
+					total5 = num + total5
+				}
+				continue;
+
+			}
+			return total5;
 		}
 	</script>
 

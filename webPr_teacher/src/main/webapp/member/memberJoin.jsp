@@ -3,8 +3,56 @@
 <!DOCTYPE HTML>
 <HTML>
 <HEAD>
-<TITLE>회원가입</TITLE>
+<TITLE>회원가입페이지</TITLE>
 <link href="../css/style.css" type="text/css" rel="stylesheet">
+<script>
+	// 버튼을 눌렀을 때 check함수 작동
+	function check() {
+
+		var fm = document.frm;
+
+		var memberId = fm.memberId
+		var memberPwd = fm.memberPwd
+		if (memberId.value == "") {
+			alert("아이디를 입력해주세요");
+			return;
+		} else if (memberPwd.value == "") {
+			alert("비밀번호를 입력해주세요");
+			return;
+		} else if (memberPwd2.value == "") {
+			alert("비밀번호 확인란을 입력해주세요.");
+			return;
+		} else if (memberName.value == "") {
+			alert("회원이름을 입력해주세요.");
+			return;
+		} else if (memberEmail.value == "") {
+			alert("이메일을입력해주세요.");
+			return;
+		} else if (memberPhone.value == "") {
+			alert("전화번호를 입력해주세요.");
+			return;
+		} else if (memberAddr.value == "") {
+			alert("주소를 선택해주세요.");
+			return;
+		} else if (memberGender.value == "") {
+			alert("성별을 선택해주세요.");
+			return;
+		} else if (memberBirth.value == "") {
+			alert("생년월일을 입력해주세요.");
+			return;
+		} else if (memberHobby.value == "") {
+			alert("취미를 선택해주세요.");
+			return;
+		}
+
+		return; // 리턴에 값을 넣지 않으면 멈춤
+	}
+</script>
+
+
+
+
+
 </HEAD>
 <BODY>
 	<header>
@@ -80,9 +128,9 @@
 					<tr>
 						<td colspan=2 style="text-align: center;">
 
-							<button type="button" onclick="javascript : "></button> <input
-							type="submit" name="btn" value="회원정보 저장하기"> <input
-							type="reset" name="btn" value="초기화">
+							<button type="button" onclick="javascript : alret('저장하시겠습니까?');">저장하기</button>
+							<!--<input type="submit" name="btn" value="회원정보 저장하기"> <input
+							type="reset" name="btn" value="초기화">-->
 						</td>
 					</tr>
 				</table>

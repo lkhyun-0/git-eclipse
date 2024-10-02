@@ -8,7 +8,8 @@
 
 	alert("경고창을 띄웁니다.")
 
-	document.write("<p style = 'font-size : 30px;color: skyblue;'>글자크기30px</p>")
+	document
+			.write("<p style = 'font-size : 30px;color: skyblue;'>글자크기30px</p>")
 	document.write("<a href='http://naver.com'>네이버가기</a>");
 	document.write("<br>");
 	document.write("<a href =\"javascript:alert('클릭했나요?');\">클릭</a>");
@@ -23,7 +24,7 @@
 		document.write(value);
 	}
 
-	let val = confirm("전송할까요?") 
+	let val = confirm("전송할까요?")
 	if (val == true) {
 		document.write("네");
 	} else {
